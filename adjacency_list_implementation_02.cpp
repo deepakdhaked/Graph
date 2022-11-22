@@ -5,13 +5,9 @@ using namespace std;
 
 void addEdge(unordered_map<int, vector<int>> &adj, int u, int v, bool isDir)
 {
-    if (isDir)
+    adj[u].push_back(v);
+    if (!isDir)
     {
-        adj[u].push_back(v);
-    }
-    else
-    {
-        adj[u].push_back(v);
         adj[v].push_back(u);
     }
 }
