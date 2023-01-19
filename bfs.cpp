@@ -77,7 +77,7 @@ int main()
             bfs(adj, visited, ans, i);
         }
     }
-
+    cout << "BFS Traversal : ";
     for (int i : ans)
     {
         cout << i << ' ';
