@@ -30,6 +30,8 @@ void displayGraph(vector<int> adj[], int V)
     }
 }
 
+// Time Complexity : O(N + E)
+// Space Complexity : O(N)
 void topological_sort(vector<int> adj[], unordered_map<int, bool> &visited, stack<int> &ans, int src)
 {
     visited[src] = true;
