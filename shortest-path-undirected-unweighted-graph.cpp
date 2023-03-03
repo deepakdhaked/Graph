@@ -91,7 +91,7 @@ int main()
     addEdge(adj, 6, 7, 0);
     displayGraph(adj, V);
 
-        int src = 0, dst = 7;
+    int src = 0, dst = 7;
 
     // Do BFS
     unordered_map<int, bool> visited;
